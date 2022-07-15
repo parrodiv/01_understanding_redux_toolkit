@@ -1,12 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import  Counter  from '../src/features/counter/Counter'
 
 function App() {
   return (
-    <main className="Ap">
-      
+    <main className='App'>
+      <Counter />
     </main>
-  );
+  )
 }
 
-export default App;
+export default App
