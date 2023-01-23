@@ -6,7 +6,7 @@ const initialState = {
 
 export const counterSlice = createSlice({
   name: 'counter',
-  initialState,
+  initialState, //this is the state
   reducers: {
     // actions
     increment: (state) => {
@@ -19,7 +19,8 @@ export const counterSlice = createSlice({
       state.count = 0
     },
     incrementByAmount: (state, action) => {
-      state.count += action.payload
+      state.count += action.payload 
+      // payload will be the addValue variable, whose value is the same of incrementAmount state
     }
   },
 })
